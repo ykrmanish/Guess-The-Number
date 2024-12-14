@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #222;
+    font-family: "Sixtyfour Convergence", sans-serif;
+}
+
+.main-header{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+h1{
+    padding-top: 10px;
+}
+
+.main-header > button{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    height: 60px;
+    width: 180px;
+    font-family: "Sixtyfour Convergence", sans-serif;
+    background-color: #EEEEEE;
+    border: 0px;
+    font-size: larger;
+}
+
+.note{
+    display: flex;
+    justify-content: end;
+}
+
+h2{
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.hidden{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    border-bottom: 5px solid #EEEEEE;
+}
+
+
+.hidden-number{
+    height: 100px;
+    width: 120px;
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    position: relative;
+    top: 50px;
+}
+
+.game-play{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 500px, 500px;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.submit-number{
+    flex-direction: column;
+    display: inline-flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    /* border: 5px solid white; */
+
+}
+
+.number{
+    height: 60px;
+    width: 180px;
+    border: 0;
+    background-color: #222;
+    border: 3px solid #EEEEEE;
+    padding-inline:20px;
+    color: #EEEEEE;
+    font-family: "Sixtyfour Convergence", sans-serif;
+}
+
+
+.check{
+    height: 60px;
+    width: 140px;
+    font-family: "Sixtyfour Convergence", sans-serif;
+    background-color: #EEEEEE;
+    border: 0;
+    font-size: 20px;
+}
+
+.details{
+    /* border: 5px solid white; */
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.details > p{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+button{
+    background-color: #EEEEEE;
+}
+
+button:hover{
+    background-color: grey;
+}
