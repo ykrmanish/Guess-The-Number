@@ -13,12 +13,13 @@ const displayMessage = function(message){
 const startCondition = function(){
     score = 20;
     secretNumber = Math.trunc(Math.random() * 20) + 1;
-    document.querySelector('.hidden-number').textContent = '?'
-    document.querySelector('#message').textContent = '😊 Start Guessing'
-    document.querySelector('#score').textContent = `💯 Score: ${score}`
+    document.querySelector('.hidden-number').textContent = '?';
+    document.querySelector('#message').textContent = '😊 Start Guessing';
+    document.querySelector('#score').textContent = `💯 Score: ${score}`;
     document.querySelector('.highscore').textContent = highscore
-    document.querySelector('body').style.backgroundColor = '#222',
-    document.querySelector('.number').style.backgroundColor = '#222'
+    document.querySelector('body').style.backgroundColor = '#222';
+    document.querySelector('.number').style.backgroundColor = '#222';
+    document.querySelector('.number').textContent = "";
 }
 
 
