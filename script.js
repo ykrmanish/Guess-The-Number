@@ -4,6 +4,7 @@ let secretNumber = Math.trunc(Math.random() * 20) + 1;
 let guess;
 let score = 20
 let highscore = 0
+let gameOn = true;
 
 const displayMessage = function(message){
     document.querySelector('#message').textContent = message;
@@ -20,10 +21,11 @@ const startCondition = function(){
     document.querySelector('body').style.backgroundColor = '#222';
     document.querySelector('.number').style.backgroundColor = '#222';
     document.querySelector('.number').value = "";
+    gameOn = true;
 }
 
 
-
+if (gameOn === true){
 document.querySelector('.check').addEventListener('click',function(){
     guess = Number(document.querySelector('.number').value);
     console.log(guess);
@@ -47,6 +49,7 @@ document.querySelector('.check').addEventListener('click',function(){
     }
 
     else if(guess === secretNumber){
+        gameOn = false;
         document.querySelector('#message').textContent = '✔️ Correct'
         document.querySelector('body').style.backgroundColor = '#A8CD89'
         document.querySelector('.number').style.backgroundColor = '#EEEEEE'
@@ -60,6 +63,7 @@ document.querySelector('.check').addEventListener('click',function(){
 
 
 })
+}
 
 
 document.querySelector('.again').addEventListener('click', startCondition)
