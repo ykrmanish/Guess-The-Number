@@ -20,6 +20,7 @@ const startCondition = function(){
     document.querySelector('body').style.backgroundColor = '#222';
     document.querySelector('.number').style.backgroundColor = '#222';
     document.querySelector('.number').value = "";
+    document.querySelector('.check').style.opacity = '1';
 }
 
 
@@ -50,6 +51,7 @@ document.querySelector('.check').addEventListener('click',function(){
         document.querySelector('body').style.backgroundColor = '#A8CD89';
         document.querySelector('.number').style.backgroundColor = '#EEEEEE';
         document.querySelector('.hidden-number').textContent = secretNumber;
+        document.querySelector('.check').style.opacity = '0';
         if (score > highscore){
             highscore = score
             document.querySelector('.highscore').textContent = highscore;
