@@ -19,7 +19,7 @@ const startCondition = function(){
     document.querySelector('.highscore').textContent = highscore
     document.querySelector('body').style.backgroundColor = '#222';
     document.querySelector('.number').style.backgroundColor = '#222';
-    document.querySelector('.number').textContent = "";
+    document.querySelector('.number').value = "";
 }
 
 
