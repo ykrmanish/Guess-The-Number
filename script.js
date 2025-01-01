@@ -20,7 +20,6 @@ const startCondition = function(){
     document.querySelector('body').style.backgroundColor = '#222';
     document.querySelector('.number').style.backgroundColor = '#222';
     document.querySelector('.number').value = "";
-    gameOn = true;
 }
 
 
